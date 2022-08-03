@@ -1,0 +1,106 @@
+<!-- the absolute path of html file should be provided to the express(not relative path) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="/js/script.js"></script>
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="bgImage"></div>
+        <div class="upper">
+            <header>
+                <nav class="navbar">
+                    <ul class="navigation">
+                        <li class="item"><a href="/">Home</a></li>
+                        <li class="item"><a href="/about">About</a></li>
+                        <li class="item"><a href="/help">Help</a></li>
+                    </ul>
+
+                    <form action="" class="form1 hidden">
+                        <div>
+                            <input class="input-data input-data1" type="text" placeholder="Enter an address or city">
+                            <button class="button1">Submit</button>
+                        </div>
+
+                    </form>
+                </nav>
+            </header>
+
+            <div class="heading">
+                {{title}}
+            </div>
+
+            <form action="" class="form2">
+                <div>
+                    <input class="input-data input-data2" type="text" placeholder="Enter an address or city">
+                    <button class="button2">Submit</button>
+                </div>
+            </form>
+            <div class="result hidden"></div>
+            <div class="temperature hidden"></div>
+        </div>
+        <div class="content hidden">
+            <div class="weather-description"></div>
+            <div class="forecast">
+                <div class="current">
+                    <div class="day day0"></div>
+                    <img src="" alt="icon" class="img0 image" width="120px">
+                    <div class="temp0 temp"></div>
+                    <div class="desc0 desc"></div>
+                </div>
+                <div class="future">
+                    <div class="fc fc1">
+                        <div class="day day1"></div>
+                        <img src="" alt="icon" class="img1 image " width="100px">
+                        <div class="temp1 temp"></div>
+                        <div class="desc1 desc"></div>
+                    </div>
+                    <div class="fc fc2">
+                        <div class="day day2"></div>
+                        <img src="" alt="icon" class="img2 image" width="100px">
+                        <div class="temp2 temp"></div>
+                        <div class="desc2 desc"></div>
+                    </div>
+                    <div class="fc fc3">
+                        <div class="day day3"></div>
+                        <img src="" alt="icon" class="img3 image" width="100px">
+                        <div class="temp3 temp"></div>
+                        <div class="desc3 desc"></div>
+                    </div>
+                    <div class="fc fc4">
+                        <div class="day day4"></div>
+                        <img src="" alt="icon" class="img4 image" width="100px">
+                        <div class="temp4 temp"></div>
+                        <div class="desc4 desc"></div>
+                    </div>
+                    <div class="fc fc5">
+                        <div class="day day5"></div>
+                        <img src="" alt="icon" class="img5 image" width="100px">
+                        <div class="temp5 temp"></div>
+                        <div class="desc5 desc"></div>
+                    </div>
+                    <div class="fc fc6">
+                        <div class="day day6"></div>
+                        <img src="" alt="icon" class="img6 image" width="100px">
+                        <div class="temp6 temp"></div>
+                        <div class="desc6 desc"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
