@@ -13,6 +13,7 @@ const viewsPath = path.join(__dirname, '../templates/views');           //custom
 const partialsPath = path.join(__dirname, '../templates/partials');      //we keep common html in this folder so we can reuse it instead of typing again and again
 
 const app = express();    //express is only a single function, not an object
+const port = process.env.PORT || 3000 
 
 //when a user specifies the route(part of url) in the string, what has to be done (eg sending html, json file etc) is dicided by the callback function
 //the object passed to function is called req, short for request. other argument is the response
@@ -115,8 +116,8 @@ app.get('*', (req, res) => {
 })
 
 //this fires only one time. it says use local host 3000. callback function is optional. we can use it to show if the server is running. starting the server is a synchronous process
-app.listen(3000, () => {
-    console.log('server is up on port 3000');
+app.listen(port, () => {
+    console.log('server is up on port' + port);
 })
 
 //server will not close on its own. its job is to be up and running and listen for new requests

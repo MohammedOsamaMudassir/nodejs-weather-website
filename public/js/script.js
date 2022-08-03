@@ -77,7 +77,7 @@ for (let i = 0; i <= 1; i++) {
         let location = inputData[i].value;
         inputData[i].value = '';
         console.log(location);
-        let weatherData = getWeatherData(`http://localhost:3000/weather?address=${location}`);
+        let weatherData = getWeatherData(`/weather?address=${location}`);
 
     })
 }
